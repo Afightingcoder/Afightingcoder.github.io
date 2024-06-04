@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		
+		<title>Welcome to Cheung's Website!</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.processed.css">
+		<link rel="subresource" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js">
+	</head>
+	<body>
+		<canvas id="background"></canvas>
+        <div id="logo"></div>
+        <div id="aboutCard"><canvas id="aboutCardBgCanvas"></canvas></div>
+
+
+        <div class="quiz-container">
+        <h1 id="Heading" >The quiz contains 10 questions and each question has a time limit.</h1>
+        <h2 id="nameHeading">Welcome to the quiz! Please input your name:</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name." class="input">
+  <button onclick="startGame()" id="bt">Start Quiz.</button>
+
+  <div id="questionContainer" style="display: none;">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <p id="timer"></p>
+    <button onclick="submitAnswer()" id="submitButton">Submit</button>
+
+     <div id="result"></div>
+    <button id="nextButton" onclick="showNextQuestion()" style="display: none;">Next question</button>
+  </div>
+
+  <div id="resultContainer" style="display: none;">
+    <h1>Answer situation</h1>
+    <p id="questionResult"></p>
+  </div>
+
+  <div id="showLeaderboardButton"></div>
+  <div id="leaderboardContainer"><button id="restartQuizButton"  style="display: none;">Restart Quiz.</button></div>
+</div>
+
+<div class="leaf">
+  <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+   <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+   <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+   <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+    <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+  <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+
+       
+  </div>
+  
+  <div class="leaf leaf1">
+  <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+   <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+   <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+   <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+    <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+  <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+       
+  </div>
+  
+  <div class="leaf leaf2">
+  <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+   <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+   <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+   <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+ 
+    <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+  <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+
+  </div>
+
+        <nav class="nav">
+            <a href="index.html" class="nav-item">🏠Home</a>
+            <a href="About.html" id="nav-about" class="nav-item">👦About</a>
+            <a href="Quiz.html" id="nav-work" class="nav-item">📝Quiz application</a>
+        </nav>
+  
+        <canvas id="overlay"></canvas>
+        <section id="contact" class="content-wrapper" aria-hidden="true">
+            <canvas id="contactBgCanvas"></canvas>
+        </section>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/main.processed.js"></script>
+            <script src="server.js"></script>
+          
+        </body>
+    </html>
