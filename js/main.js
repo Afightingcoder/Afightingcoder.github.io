@@ -23,7 +23,18 @@ let logoAnimDone = false;
 
 let lastHash = location.hash;
 
+document.getElementById('button-container').addEventListener('click', function(event) {
+  // 检查点击的元素是否是一个按钮
+  if (event.target.classList.contains('btn')) {
+    const toast = document.getElementById('message-toast');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2000);
+  }
+});
 
+  
 
 function removeAnimation(animation) {
 	let index = animations.indexOf(animation);

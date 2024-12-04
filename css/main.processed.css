@@ -2092,5 +2092,22 @@ button:hover {
   background-color: #4a69bb; /* 鼠标悬停时的背景色 */
 }
 
+#message-toast {
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: visibility 0s, opacity 0.5s linear;
+}
 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
 
